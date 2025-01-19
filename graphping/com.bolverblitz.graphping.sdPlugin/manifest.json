@@ -1,0 +1,46 @@
+{
+	"Name": "pingkey",
+	"Version": "0.1.0.0",
+	"Author": "BolverBlitz",
+	"Actions": [
+		{
+			"Name": "Simple Ping Key",
+			"UUID": "com.bolverblitz.graphping.simpleping",
+			"Icon": "imgs/actions/counter/icon",
+			"Tooltip": "Displays your ping, by pressing the button.",
+			"PropertyInspectorPath": "ui/simple-ping.key.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "pingkey",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Allows you to quickly check your ping",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.bolverblitz.graphping"
+}
