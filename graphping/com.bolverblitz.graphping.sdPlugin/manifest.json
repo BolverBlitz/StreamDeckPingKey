@@ -17,6 +17,21 @@
 					"TitleAlignment": "middle"
 				}
 			]
+		},
+		{
+			"Name": "Graph Ping Key",
+			"UUID": "com.bolverblitz.graphping.graphping",
+			"Icon": "imgs/actions/counter/icon",
+			"Tooltip": "Displays your ping, by pressing the button.",
+			"PropertyInspectorPath": "ui/graph-ping.key.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
 		}
 	],
 	"Category": "pingkey",

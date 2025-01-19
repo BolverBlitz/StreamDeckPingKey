@@ -1,5 +1,6 @@
 import commonjs from "@rollup/plugin-commonjs";
 import nodeResolve from "@rollup/plugin-node-resolve";
+import json from '@rollup/plugin-json';
 import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 import path from "node:path";
@@ -20,7 +21,7 @@ const config = {
 			return url.pathToFileURL(path.resolve(path.dirname(sourcemapPath), relativeSourcePath)).href;
 		}
 	},
-	external: ['raw-socket'],
+	external: ['raw-socket', 'canvas'],
 	plugins: [
 		{
 			name: "watch-externals",
@@ -28,6 +29,7 @@ const config = {
 				this.addWatchFile(`${sdPlugin}/manifest.json`);
 			},
 		},
+		json(),
 		typescript({
 			mapRoot: isWatching ? "./" : undefined
 		}),

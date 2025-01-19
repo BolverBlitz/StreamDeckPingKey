@@ -74,6 +74,9 @@ export class SimplePing extends SingletonAction<SinglePingSettings> {
       const lossPercentage = (packetLoss / pingCount) * 100;
     
       await ev.action.setTitle(`Ping avg:\n${averagePing.toFixed(2)}ms\nLoss:\n${lossPercentage.toFixed(2)}%`);
+      setTimeout(() => {
+        ev.action.setTitle(`Ping\n${ipAddress}`);
+      }, 5000);
     });
 
     session.close();
