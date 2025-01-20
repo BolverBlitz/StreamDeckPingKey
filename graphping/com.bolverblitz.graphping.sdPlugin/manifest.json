@@ -34,7 +34,7 @@
 			]
 		}
 	],
-	"Category": "pingkey",
+	"Category": "Ping Key",
 	"CategoryIcon": "imgs/plugin/category-icon",
 	"CodePath": "bin/plugin.js",
 	"Description": "Allows you to quickly check your ping",
